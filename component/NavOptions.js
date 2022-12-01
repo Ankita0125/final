@@ -9,15 +9,15 @@ import { useNavigation } from '@react-navigation/native';
     {
         id:"123",
         title :"Municipal Corporation",
-        image:"https://tse3.mm.bing.net/th?id=OIP.zedPmAZrBESPOTKYY3P3jgHaHw&pid=Api&P=0",
-        screen:"MapScreen",
+        image:"https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-administration-icon-in-trendy-style-isolated-background-png-image_1538647.jpg",
+        screen:"munlogin",
 
     },
     {
         id:"456",
         title:"User Login",
-        image:"https://static.vecteezy.com/system/resources/previews/000/376/355/original/user-management-vector-icon.jpg",
-        screen:"UserScreen",
+        image:"https://www.iconpacks.net/icons/1/free-user-group-icon-296-thumb.png",
+        screen:"userlogin",
 
      
     },
@@ -33,15 +33,15 @@ const NavOptions = () => {
     renderItem={({item}) => (
         <TouchableOpacity 
           onPress={() => navigation.navigate(item.screen)}
-          style={tw`p-2 pl-6 pb-8 pt-4 bg-white-200  w-100 mb-1 mt-4 rounded-3xl`}>
+          style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
             <View>
               <Image
-                style={{width:120,height:120,resizeMode:"contain", marginLeft:100, marginTop:30,  borderRadius:40}}
+                style={{width:120,height:120,resizeMode:"contain"}}
                 source={{uri:item.image}}
               />
-              <Text style={tw`mt-2 text-2xl text-center font-semibold`}>{item.title}</Text>
+              <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
               <Icon
-              style={tw`p-2 bg-black rounded-full w-70 ml-100 mt-4 mr-4`}
+              style={tw`p-2 bg-black rounded-full w-10 mt-4`}
               name='arrowright'
               color='white'
               type='antdesign'

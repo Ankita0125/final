@@ -1,16 +1,14 @@
 import { StyleSheet, Text, View,Image,ScrollView } from 'react-native'
 import React from 'react'
-import NavOptions4 from '../component/NavOptions4';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 
 const Information = () => {
     
   return (
     <View>
-    <NavOptions4></NavOptions4>
+
     <ScrollView>
-    <Image
+      <Image
         style={{
             width:400,
             height:400,
@@ -20,8 +18,7 @@ const Information = () => {
         }}
         source={{uri:"https://evreka.co/wp-content/uploads/2021/03/59907-min-scaled.jpg"}}
       />
-
-      <Text style={styles.heading}>Why is segregation Important?</Text>
+      <Text style={styles.heading}>Why is seggregation Important?</Text>
         <Text style={styles.container}>
         Waste segregation is important not only to reduce the impact it has on the environment, but also health issues that can arise from waste and toxins that have been improperly disposed of.
          </Text>
@@ -36,7 +33,7 @@ const Information = () => {
          <Text style={styles.container}>All discarded items like metals, furniture, organic waste that can be recycled fall under this category. Not all items are recyclable, so you have to be careful when putting things into the recycle bin. If you are not sure whether an item is recyclable or not, then check the item’s packaging.</Text>
          <Text style={styles.wasteTypes}> Hazardous Waste:</Text>
          <Text style={styles.container}>Hazardous waste includes flammable, corrosive, toxic and reactive materials. In a nutshell, they are wastes that pose a significant or potential threat to our environment.</Text>
-         <Text style={styles.heading}>Why is Recycling important?</Text>
+         <Text style={styles.heading}>Why is seggregation important?</Text>
          <Text style={styles.container}>More And More People recycle everyday.This helps to reduce
          the need  for landfill and more costly forms of disposal.
          Recycling also reduces the need for extracting mining,quarrying,and logging refining and processing raw 
@@ -47,7 +44,6 @@ const Information = () => {
       
       
     </ScrollView>
-    
     </View>
   )
 }
